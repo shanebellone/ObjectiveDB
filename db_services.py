@@ -3,7 +3,7 @@ from Database.interface import ObjectDatabase
 
 def retrieve_data(database, uid):
     with ObjectDatabase(database) as db:
-        return db.hash_table.get(uid.lower())
+        return db.hash_table.get(uid)
 
 
 def retrieve_database(database):

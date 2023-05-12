@@ -26,6 +26,7 @@ class ObjectDatabase:
         return register.status
 
     def add(self, obj, uid):
+        uid = uid.lower()
         is_duplicate = uid in self.hash_table.keys()
         if is_duplicate is True:
             return KeyError("Duplicate UID")
@@ -35,6 +36,7 @@ class ObjectDatabase:
         return status
 
     def retrieve(self, uid, val_key):
+        uid = uid.lower()
         obj_dict = self.hash_table.get(uid)
         obj = obj_dict.get(val_key)
         return obj
