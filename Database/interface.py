@@ -22,8 +22,8 @@ class ObjectDatabase:
             self.hash_table = db.data
 
     def _save_db(self):
-        register = ObjectiveDB(self.db, self.hash_table)
-        return register.status
+        db = ObjectiveDB(self.db, self.hash_table)
+        return db.status
 
     def add(self, obj, uid):
         uid = uid.lower()
