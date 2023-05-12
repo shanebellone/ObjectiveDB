@@ -8,7 +8,7 @@ It offers three basic services found in db_services.py:
 - retrieve database
 - store data
 
-You may add custom services to this file. Please note, ObjectiveDB should be accessed via context manager.
+Custom services can be added to this file. Please note, ObjectiveDB should be accessed via context manager.
 
 ## Using ObjectiveDB
 
