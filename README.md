@@ -14,7 +14,7 @@ Custom services can be added to this file. Please note, ObjectiveDB should be ac
 
 **Create a test file in the ObjectiveDB folder.**
 
-Call store_data([db_name], [object], [uid]) to create Database/[db_name].db:
+Call store_data([db_name], [object], [uid]) to create Database/[db_name].odb:
 
 `db_response = store_data("test_database", {"Test Key": "Test Value"}, "test_uid")`
 

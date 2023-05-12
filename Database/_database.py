@@ -9,7 +9,7 @@ class ObjectiveDB:
 
     def __init__(self, db, obj=None):
         base_path = os.path.abspath('Database')
-        self.location = Path(base_path).joinpath(db + ".b")
+        self.location = Path(base_path).joinpath(db + ".odb")
         self.db = self._load_db()
         if obj is None:
             self.status = self._retrieve_data()
